@@ -1,0 +1,99 @@
+/* ================= AUTH PAGES ================= */
+.auth-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 120px);
+    /* header + footer boşluğu */
+    background: #f3f4f6;
+    padding: 1rem;
+}
+
+.auth-box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 340px;
+    text-align: center;
+    animation: fadeInAuth 0.3s ease-in-out;
+}
+
+.auth-box h2 {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #111827;
+}
+
+.auth-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.auth-box input {
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.auth-box input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.auth-box button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.auth-box button:hover {
+    background: #1d4ed8;
+}
+
+.auth-alt {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+.auth-alt a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.auth-alt a:hover {
+    text-decoration: underline;
+}
+
+.auth-error {
+    color: #dc2626;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+/* === Animasyon (sadece auth için) === */
+@keyframes fadeInAuth {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

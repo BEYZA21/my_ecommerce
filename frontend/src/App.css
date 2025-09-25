@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, Arial, sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.site-header,
+.site-footer {
+  background: #f9f9f9;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.nav-link {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 12px;
+}

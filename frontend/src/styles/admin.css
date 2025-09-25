@@ -1,0 +1,92 @@
+/* ============ Admin Panel ============ */
+.admin-panel {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.admin-panel h2 {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: #2563eb;
+}
+
+.form-message {
+    margin-bottom: 1rem;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    background: #f3f4f6;
+    color: #111827;
+}
+
+.pending-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pending-item {
+    display: grid;
+    grid-template-columns: 80px 1fr auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.pending-item:last-child {
+    border-bottom: none;
+}
+
+.pending-item img {
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.pending-item strong {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+    color: #111827;
+}
+
+.pending-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+.pending-item button {
+    display: inline-block;
+    margin-left: 0.5rem;
+    padding: 0.5rem 0.9rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.pending-item button:first-child {
+    background: #10b981;
+    /* yeşil */
+    color: white;
+}
+
+.pending-item button:first-child:hover {
+    background: #059669;
+}
+
+.pending-item button:last-child {
+    background: #ef4444;
+    /* kırmızı */
+    color: white;
+}
+
+.pending-item button:last-child:hover {
+    background: #dc2626;
+}
